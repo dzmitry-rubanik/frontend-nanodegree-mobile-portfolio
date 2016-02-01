@@ -16,7 +16,7 @@ a:hover, a:active { color: #c00; outline: 0; }
 b, strong { font-weight: bold; }
 pre, code { font-family: monospace, monospace; font-size: 1em; }
 ul, ol { margin: 1em 0; padding: 0 0 0 20px; }
-img { border: 0; max-width: 100%; }
+img { border: 0px;  max-width: 100%; }
 
 body { background: #fff; }
 header, footer, .container { max-width: 45em; margin: 0 auto; }
@@ -31,18 +31,20 @@ header p span { font-size: 0.8em; font-weight: normal;}
   border-top: 1px solid #ccc;
 }
 
-.content { padding: 1em 1em; }
-.content li { list-style-type: none; font-size: 1.1em;}
-li img { float:left; padding-right: 1em; }
-li p { font-size: 0.9em; font-style: italic; }
+.content { padding: 1em 1em;}
+.content li { list-style-type: none; font-size: 1.1em; display: block;}
 
-footer {
-  padding: 0 0.5em;
-  border-top: 1px solid #ccc;
-}
+li div { float:left; width: 100px; background: url('../img/content.jpg'); margin: 0  1em 0 1em;}
+li p { font-size: 0.9em; font-style: italic;}
+
+#game2048{height: 50px;}
+#udacityWPO{background-position: 0 -50px; height: 62px;}
+#MWD{background-position: 0 -112px; height: 61px;}
+#pizzaLink{background-position: 0 -187px; height: 60px;}
+
+footer {padding: 0 0.5em; border-top: 1px solid #ccc;}
 footer span { float: right; font-style: italic; }
 
-/* Smartphones (portrait) */
 @media only screen and (max-width: 480px) {
   body { font-size: 12px;}
   header p { padding-left: 4.5em;}
